@@ -1,6 +1,6 @@
 # USB_OTG_to_QSPI_Flash
-STM32F769I-Discovery bittmap flashed to QSPI flash from USB drive<br>
-Reads bitmaps from the Media directory on your micro SD card and uploads them to the on-board QSPI flash<br>
+STM32F769I-Discovery bittmap flashed to QSPI flash from USB OTG thumb drive<br>
+Reads bitmaps from the Media directory on your USB drive and uploads them to the on-board QSPI flash<br>
 Bitmaps should be 8888 format not 565<br>
 Outputs info about what its doing to UART 1 so open a terminal window to see what its doing<br>
 Remember that to write to the QSPI flash, you cannot be in memory mapped mode. To read the bitmaps or whatever back out, put the qspi in memory mapped mode and add 0x90000000 to the address<br>
